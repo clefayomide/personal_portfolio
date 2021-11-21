@@ -29,26 +29,6 @@ function App() {
             <Route exact path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        {/* <footer className="footer">
-          <div className="footer-text-container">
-            <p className="accolades">
-              Designed by{" "}
-              <a
-                href="https://www.behance.net/Ibrahim_Shamss"
-                className="designer"
-              >
-                Ibrahim Shamss.
-              </a>{" "}
-              Coded by{" "}
-              <a
-                href="https://www.linkedin.com/in/victor-olorunfemi-94a63a142/"
-                className="coder"
-              >
-                Olorunfemi Victor
-              </a>
-            </p>
-          </div>
-        </footer> */}
       </div>
     </Context.Provider>
   );
