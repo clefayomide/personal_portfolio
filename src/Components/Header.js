@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import avatar from "../myAvatar.svg";
 import MobileHamburgerMenu from "./MobileHamburgerMenu";
 import MobileNavRoutes from "./MobileNavRoutes";

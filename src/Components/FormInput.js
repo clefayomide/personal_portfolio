@@ -14,6 +14,7 @@ const FormInput = ({ name, type, className, required, placeholder, id, value, se
         }
       }
       if(type === "email"){
+        // eslint-disable-next-line
         if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)){
           setError([])
           return
@@ -26,6 +27,7 @@ const FormInput = ({ name, type, className, required, placeholder, id, value, se
 
   useEffect(() => {
     validate()
+    // eslint-disable-next-line
   }, [value])
 
   return (

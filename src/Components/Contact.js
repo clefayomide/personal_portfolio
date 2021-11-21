@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// eslint-disable-next-line
 import { app } from "../firebase_config";
 import { getDatabase, ref, set } from "firebase/database";
 import Btn from "./Btn";

@@ -18,6 +18,7 @@ const TextAreaInput = ({ name, placeholder, required, form, id, value, setValue 
 
   useEffect(() => {
     validate()
+    // eslint-disable-next-line
   }, [value])
   return (
     <>
