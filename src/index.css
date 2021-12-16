@@ -41,6 +41,10 @@ body {
   height: 70px;
 }
 
+.cv-link {
+  text-decoration: none;
+}
+
 .nav-list-container {
   width: 50%;
   display: flex;
