@@ -131,6 +131,17 @@ const Data = {
 
   porfolio: [
     {
+      projectName: "Country Rest Api",
+      category: "personal",
+      image:
+        "https://res.cloudinary.com/clefayomide/image/upload/v1643575911/c2ods67mtn6uf4ljoprd.jpg",
+      technologies: "Reactjs, Tailwind",
+      liveLink: "https://explore-country.netlify.app/",
+      description:
+        "Frontend Mentor - REST Countries API with color theme switcher",
+      github: "https://github.com/clefayomide/country_rest_api",
+    },
+    {
       projectName: "Live scores and Highlights",
       category: "personal",
       image:
@@ -194,17 +205,6 @@ const Data = {
       description:
         "A plugin powered web app for communication and collaboration",
       github: "https://github.com/clefayomide/zc_plugin_noticeboard",
-    },
-    {
-      projectName: "Calculator",
-      category: "personal",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1636797026/hjlqzom7zkpa7dcabhe6.png",
-      technologies: "Reactjs",
-      liveLink: "https://calc-with-react.netlify.app/",
-      description:
-        "A Calculator capable of performing basic arithmetic operations",
-      github: "https://github.com/clefayomide/calculator",
     },
   ],
 
