@@ -134,7 +134,7 @@ const Data = {
       projectName: "Country Rest Api",
       category: "personal",
       image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1643575911/c2ods67mtn6uf4ljoprd.jpg",
+        "https://res.cloudinary.com/clefayomide/image/upload/v1643576891/vpvkursx8hkarruwftxp.jpg",
       technologies: "Reactjs, Tailwind",
       liveLink: "https://explore-country.netlify.app/",
       description:
