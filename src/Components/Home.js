@@ -47,7 +47,7 @@ const Home = () => {
               <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
             </svg>
             <p className="years-container">
-              Experience <br /> <span className="years">1 Year</span>
+              Experience <br /> <span className="years">2 Years</span>
             </p>
           </div>
 
