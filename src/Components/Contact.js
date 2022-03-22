@@ -87,7 +87,7 @@ const Contact = () => {
               </svg>
             </div>
             <div className="contact-desc">
-              <p className="contact-location">Lagos, Nigeria</p>
+              <p className="contact-location">Abuja, Nigeria</p>
               <p className="contact-email">
                 <a
                   href="mailto:victorolorunfemi.py@gmail.com"

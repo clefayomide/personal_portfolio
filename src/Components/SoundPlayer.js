@@ -1,22 +1,20 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import Sound from "react-sound";
-import falling from "../falling.mp3";
 // eslint-disable-next-line
+import falling from "../falling.mp3";
 import avinam from "../ES_Avinam - Valante.mp3";
-import { Context } from "../App";
 
 const SoundPlayer = ({
   handleSongLoading,
   handleSongPlaying,
   handleSongFinishedPlaying,
 }) => {
-  const { isPlaying } = useContext(Context);
   const [vol] = useState(15);
   return (
     <div>
       <Sound
-        url={falling}
-        playStatus={!isPlaying ? Sound.status.STOPPED : Sound.status.PLAYING}
+        url={avinam}
+        playStatus={true}
         onLoading={handleSongLoading}
         onPlaying={handleSongPlaying}
         onFinishedPlaying={handleSongFinishedPlaying}

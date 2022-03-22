@@ -301,7 +301,7 @@ body {
 }
 
 .send-msg-btn {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -845,7 +845,7 @@ body {
 .email-input,
 .subject-input,
 .textArea {
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .error-msg {
@@ -857,6 +857,8 @@ body {
 .isFocused {
   border: 2px solid var(--link-primary);
 }
+
+
 
 @media (max-width: 1500px) {
   .years-of-exp {
@@ -890,7 +892,13 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 912px) {
+  .nav-list-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 625px) {
   body::before {
     content: "";
     position: fixed;

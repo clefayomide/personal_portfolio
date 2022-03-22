@@ -1,3 +1,4 @@
+import todo from "./todo.jpeg";
 const Data = {
   nav: [
     {
@@ -142,14 +143,13 @@ const Data = {
       github: "https://github.com/clefayomide/country_rest_api",
     },
     {
-      projectName: "Live scores and Highlights",
+      projectName: "Dynamic Todo App",
       category: "personal",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1636770689/lxcxfj7lsv1x0zmzjlgh.png",
-      technologies: "Reactjs, Scorebat API",
-      liveLink: "https://livescore-and-highlight.netlify.app/",
-      description: "A livescore and highlight web app using Scorebat API",
-      github: "https://github.com/clefayomide/live-score-and-highlight",
+      image: todo,
+      technologies: "Reactjs, Tailwind",
+      liveLink: "https://todo-dnd.netlify.app/",
+      description: "Frontend mentor - Todo app with dynamic functionality",
+      github: "https://github.com/clefayomide/understanding-useReducer-hook",
     },
     {
       projectName: "Trove Loan App",
@@ -162,17 +162,7 @@ const Data = {
         "A DEMO web app for investors to borrow up to 60% of portfolio value",
       github: "",
     },
-    {
-      projectName: "Vet Consult",
-      category: "job",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1629653640/vetconsult.webp",
-      technologies: "HTML, CSS, Javascript (Nodejs, JQuery)",
-      liveLink: "https://vetconsultweb.netlify.app/",
-      description:
-        "A vet consultation web app that connects pet owners with a vet doctor",
-      github: "https://github.com/clefayomide/vetconsult-fe-pjt-46",
-    },
+
     {
       projectName: "Payment Checkout Landing Page",
       category: "personal",
@@ -183,28 +173,6 @@ const Data = {
       description:
         "A payment checkout landing page for an eCommerce enterprise",
       github: "https://github.com/clefayomide/nckTech",
-    },
-    {
-      projectName: "Koogah Admin",
-      category: "job",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1636813140/r5txar9rxhevgmuwcv1e.png",
-      technologies: "Reactjs",
-      liveLink: "",
-      description:
-        "The Admin section of Koogah.com, a Logistics and instant Delivery web app",
-      github: "https://github.com/KOOGAH/koogah_admin",
-    },
-    {
-      projectName: "Zuri Chat",
-      category: "job",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1636797313/snlc721gm5uqzbsx12kt.png",
-      technologies: "Micro-frontend (Reactjs, Vuejs)",
-      liveLink: "https://www.zuri.chat/",
-      description:
-        "A plugin powered web app for communication and collaboration",
-      github: "https://github.com/clefayomide/zc_plugin_noticeboard",
     },
   ],
 
