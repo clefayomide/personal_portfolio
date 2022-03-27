@@ -1,4 +1,5 @@
 import todo from "./todo.jpeg";
+import productPage from "./product-page.png";
 const Data = {
   nav: [
     {
@@ -150,6 +151,15 @@ const Data = {
       liveLink: "https://todo-dnd.netlify.app/",
       description: "Frontend mentor - Todo app with dynamic functionality",
       github: "https://github.com/clefayomide/understanding-useReducer-hook",
+    },
+    {
+      projectName: "e-Commerce Product Page",
+      category: "personal",
+      image: productPage,
+      technologies: "Reactjs, CSS",
+      liveLink: "https://product-interface.netlify.app/",
+      description: "Frontend mentor - eCommerce Product Page",
+      github: "https://github.com/clefayomide/product-page",
     },
     {
       projectName: "Trove Loan App",
