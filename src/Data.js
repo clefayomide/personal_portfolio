@@ -1,5 +1,6 @@
 import todo from "./todo.jpeg";
 import productPage from "./product-page.png";
+import exploreCountry from "./exploreCountry.png";
 const Data = {
   nav: [
     {
@@ -135,8 +136,7 @@ const Data = {
     {
       projectName: "Country Rest Api",
       category: "personal",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1643576891/vpvkursx8hkarruwftxp.jpg",
+      image: exploreCountry,
       technologies: "Reactjs, Tailwind",
       liveLink: "https://explore-country.netlify.app/",
       description:

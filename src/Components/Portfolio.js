@@ -19,6 +19,7 @@ const Portfolio = () => {
         {projects.map((project, index) => (
           <Card project={project} key={index} />
         ))}
+        <div className="project-card"></div>
       </div>
     </section>
   );
