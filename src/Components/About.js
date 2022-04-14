@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Btn from "./Btn";
 import DownloadCvBtn from "./DownloadCvBtn";
 import PageRouteAndHeadingText from "./PageRouteAndHeadingText";
@@ -24,7 +25,9 @@ const About = () => {
           </p>
 
           <div className="porfolio-btn-cv-btn">
-            <Btn className="portfolio-btn" innerText="My Portfolio" />
+            <Link to="/portfolio">
+              <Btn className="portfolio-btn" innerText="My Portfolio" />
+            </Link>
             <DownloadCvBtn />
           </div>
         </div>

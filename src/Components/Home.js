@@ -15,7 +15,9 @@ const Home = () => {
             <p className="job-title">Front-End Developer</p>
 
             <div className="hire-me-container">
-              <Btn className="hire-me-btn" innerText="Hire Me" />
+              <a href="mailto:victorolorunfemi.py@gmail.com">
+                <Btn className="hire-me-btn" innerText="Hire Me" />
+              </a>
               <DownloadCvBtn />
             </div>
           </div>

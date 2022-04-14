@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 // eslint-disable-next-line
-import { app } from "../firebase_config";
-import { getDatabase, ref, set } from "firebase/database";
+// import { app } from "../firebase_config";
+// import { getDatabase, ref, set } from "firebase/database";
 import Btn from "./Btn";
 import FormInput from "./FormInput";
 import PageRouteAndHeadingText from "./PageRouteAndHeadingText";
@@ -15,40 +16,75 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [successResponse, setSuccessResponse] = useState([]);
   const [errorResponse, setErrorResponse] = useState([]);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const hasError = errorResponse.length > 0;
   const noError = successResponse.length > 0;
-  const date = new Date();
-  const getDate = `${date.getDate()}-${date.getMonth()}-${date.getUTCFullYear()}`;
-  const randomNumber = ((Math.random() * 145) / 45) * 120;
+  // const date = new Date();
+  // const getDate = `${date.getDate()}-${date.getMonth()}-${date.getUTCFullYear()}`;
+  // const randomNumber = ((Math.random() * 145) / 45) * 120;
+
+  const templateParams = {
+    from_name: name,
+    message: `${message}  ${email}`,
+    user_email: email,
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true)
-    try {
-      const db = getDatabase();
-      set(ref(db, "message/" + name), {
-        id: randomNumber.toFixed(0),
-        name: name,
-        email: email,
-        subject: subject,
-        message: message,
-        date: getDate,
-      });
-      setSuccessResponse(["✅ Your message has been sent"]);
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-    } catch (error) {
-      console.log(error);
-      setErrorResponse([`❗ An error occurred: ${error.message}`]);
-    }
+    setLoading(true);
+    emailjs
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSuccessResponse(["✅ Your message has been sent"]);
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+          setLoading(false);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+          setErrorResponse([`❗ An error occurred`]);
+        }
+      );
     setTimeout(() => {
       setErrorResponse([]);
       setSuccessResponse([]);
-    }, 5000);
-    setLoading(false)
+    }, 6000);
+
+    // firebase initial code before switching to emailjs
+
+    // try {
+    //   const db = getDatabase();
+    //   set(ref(db, "message/" + name), {
+    //     id: randomNumber.toFixed(0),
+    //     name: name,
+    //     email: email,
+    //     subject: subject,
+    //     message: message,
+    //     date: getDate,
+    //   });
+    //   setSuccessResponse(["✅ Your message has been sent"]);
+    //   setName("");
+    //   setEmail("");
+    //   setSubject("");
+    //   setMessage("");
+    // } catch (error) {
+    //   console.log(error);
+    //   setErrorResponse([`❗ An error occurred: ${error.message}`]);
+    // }
+    // setTimeout(() => {
+    //   setErrorResponse([]);
+    //   setSuccessResponse([]);
+    // }, 5000);
+    // setLoading(false)
   };
 
   return (
@@ -146,7 +182,11 @@ const Contact = () => {
               value={message}
               setValue={setMessage}
             />
-            <Btn innerText="Send" className="send-msg-btn" disabled={loading}/>
+            <Btn
+              innerText={loading ? "Sending..." : "Send"}
+              className="send-msg-btn"
+              disabled={loading}
+            />
           </form>
         </div>
       </div>

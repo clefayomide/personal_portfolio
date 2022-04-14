@@ -46,7 +46,7 @@ body {
 }
 
 .nav-list-container {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -326,7 +326,7 @@ body {
 .identity {
   width: 40%;
   margin-top: 50px;
-  position: inherit;
+  position: relative;
 }
 
 .code-image {
@@ -343,8 +343,8 @@ body {
 
 .years-of-exp {
   position: absolute;
-  top: 500px;
-  right: 200px;
+  top: 300px;
+  left: 250px;
   width: 165px;
   display: flex;
   justify-content: space-between;
@@ -524,14 +524,16 @@ body {
 }
 
 .experience-container {
+  width: 80%;
   margin-top: 30px;
+  margin: auto;
   display: flex;
 }
 
 .exp-nav-btn-container {
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .exp-nav-btn {
@@ -621,6 +623,10 @@ body {
   border-radius: 8px;
   margin-top: 25px;
   padding: 20px;
+}
+
+.project-card-extra {
+  width: 32%;
 }
 
 .project-name {
@@ -858,9 +864,20 @@ body {
   border: 2px solid var(--link-primary);
 }
 
-
+@media (max-width: 3000px){
+  .header,
+  .main {
+    width: 1500px;
+    margin: auto;
+  }
+}
 
 @media (max-width: 1500px) {
+.header,
+.main {
+    width: 100%;
+  }
+
   .years-of-exp {
     right: 300px;
   }
@@ -894,8 +911,13 @@ body {
 
 @media (max-width: 912px) {
   .nav-list-container {
-    width: 70%;
+    width: 75%;
   }
+
+  .experience-container {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 625px) {
@@ -1029,6 +1051,7 @@ body {
   }
 
   .experience-container {
+    width: 100%;
     flex-wrap: wrap;
   }
 

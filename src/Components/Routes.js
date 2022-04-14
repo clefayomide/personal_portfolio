@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import Data from "../Data";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Routes = ({ className, navlinkClass }) => {
+  const location = useLocation()
   const [navData] = useState(Data.nav);
-  const [, setIndex] = useState();
-  const isActive = (param) => {
-    setIndex(param);
-  };
   return (
     <>
       <ul className={className}>
@@ -17,8 +14,7 @@ const Routes = ({ className, navlinkClass }) => {
               <Link
                 to={nav.route}
                 className="nav-links"
-                id={window.location.pathname === nav.route ? "active" : ""}
-                onClick={() => isActive(nav.id)}
+                id={location.pathname === nav.route ? "active" : ""}
               >
                 {nav.title}
               </Link>
