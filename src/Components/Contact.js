@@ -39,21 +39,20 @@ const Contact = () => {
         templateParams,
         process.env.REACT_APP_PUBLIC_KEY
       )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setSuccessResponse(["✅ Your message has been sent"]);
-          setName("");
-          setEmail("");
-          setSubject("");
-          setMessage("");
-          setLoading(false);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-          setErrorResponse([`❗ An error occurred`]);
-        }
-      );
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setSuccessResponse(["✅ Your message has been sent"]);
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+        setLoading(false)
+        setErrorResponse([`❗ An error occurred`]);
+      });
     setTimeout(() => {
       setErrorResponse([]);
       setSuccessResponse([]);
