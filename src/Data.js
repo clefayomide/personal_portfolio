@@ -37,96 +37,96 @@ const Data = {
   workExp: [
     {
       id: 1,
-      company: "Zuri Chat",
-      title: "Frontend Developer",
-      date: "August 2021 - October 2021",
+      company: "GenioPay",
+      title: "Frontend Engineer (Contract)",
+      date: "Febuary, 2022 - March, 2022",
       description: [
         {
           id: 1,
-          text: "Write modern, performant, maintainable code for the ongoing project",
+          text: "Created reusable components for the implementation of the Product Page, a borderless payment platform, and the Company website",
         },
         {
           id: 2,
-          text: "Work with a variety of different languages, platforms, and frameworks such as JavaScript, React, and the Single Spa micro - frontend framework",
+          text: "Handled  the Validation Logic for all Forms to ensure users input meet the program specified requirements before sending to the backend",
         },
         {
           id: 3,
-          text: "Communicate with teams of engineers, and designers on a daily basis to discuss progress and iterations",
-        },
-        {
-          id: 4,
-          text: "Fix bugs on the company software",
+          text: "Connected the Frontend to the Backend Endpoint",
         },
       ],
     },
 
     {
       id: 2,
-      company: "HNG i8",
-      title: "Frontend Developer Intern",
-      date: "August 2021 - October 2021",
+      company: "Koogah Logistics",
+      title: "Frontend Engineer Intern",
+      date: "November, 2021 - December, 2021",
       description: [
         {
           id: 1,
-          text: "Write modern, performant, maintainable code for the ongoing project",
+          text: "Implemented the overall UI for the Admin Login, Signup, and  Forgot Password Form",
         },
         {
           id: 2,
-          text: "Work with a variety of different languages, platforms, and frameworks such as JavaScript, React, and the Single Spa micro - frontend framework",
+          text: "Handled the different states in the form, eg: Error and Success State",
         },
         {
           id: 3,
-          text: "Communicate with teams of engineers, and designers on a daily basis to ensure smooth user experience across project web app",
+          text: "Handled  the Validation Logic for all Forms to ensure users input meet the program specified requirements before sending to the backend",
+        },
+        {
+          id: 4,
+          text: "Made improvement and decreased technical depth by writing logics to fix bug in the company software",
         },
       ],
     },
 
     {
       id: 3,
-      company: "Zuri Int'l",
-      title: "Frontend Developer Intern",
-      date: "March 2021 - August 2021",
+      company: "Zuri Chat",
+      title: "Frontend Engineer",
+      date: "August, 2021 - November, 2021",
       description: [
         {
           id: 1,
-          text: "Learnt various frontend web technologies",
+          text: "Wrote modern, performant, maintainable code for the company software, a Plugin Powered Micro-Frontend Slack Clone",
         },
         {
           id: 2,
-          text: "Report directly to mentors on given tasks and assignments",
+          text: "Implemented the UI for the Noticeboard Plugin notices page",
         },
         {
           id: 3,
-          text: "Communicate with fellow team member on given group work",
+          text: "Handled the migration from Create React App to Single Spa Micro-Frontend Framework",
         },
         {
           id: 4,
-          text: "Write documentation on project phase task",
+          text: "Made improvement and decreased technical depth by writing logics to fix bug in the company software",
         },
       ],
     },
 
     {
       id: 4,
-      company: "Joy Akosa's Corner",
-      title: "Web Content Creator",
-      date: "September 2014 - December 2016",
+      company: "Zuri Team",
+      title: "Frontend Engineer Intern",
+      date: "March, 2021 - August, 2021",
       description: [
         {
           id: 1,
-          text: "Curate all sporting event across the globe",
+          text: "Implemented the UI for the ongoing project, a web based Vet Consultation App",
         },
         {
           id: 2,
-          text: "Do weekend sport review",
+          text: "Implemented the Validation Logic  for the Login and SignUp Form",
         },
         {
           id: 3,
-          text: "Interview athletes",
+          text: "Connected the Login and SignUp Form to the backend endpoints",
         },
         {
           id: 4,
-          text: "Live score update",
+          text: "Deployed on a web hosting platform",
         },
       ],
     },
