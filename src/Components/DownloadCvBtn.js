@@ -3,7 +3,7 @@ import React from "react";
 const DownloadCvBtn = () => {
   return (
     <>
-    <a href="https://bit.ly/3IU8gw7" target="_blank" rel="noreferrer" className="cv-link">
+    <a href="https://docs.google.com/document/d/1_moG8-dROFMRwZkCjKEw1-JilEKmEiDoLU7D76TX84Q/edit?usp=sharing" target="_blank" rel="noreferrer" className="cv-link">
       <div className="download-cv-container">
         <p className="download-cv">Download CV</p>
         <svg
