@@ -1,6 +1,6 @@
-import todo from "./todo.jpeg";
-import productPage from "./product-page.png";
-import exploreCountry from "./exploreCountry.png";
+import todo from "./assets/todo.png";
+import exploreCountry from "./assets/country.png";
+import thrifit from "./assets/thrifit.png";
 const Data = {
   nav: [
     {
@@ -37,96 +37,55 @@ const Data = {
   workExp: [
     {
       id: 1,
-      company: "GenioPay",
-      title: "Frontend Engineer (Contract)",
-      date: "Febuary, 2022 - March, 2022",
+      company: "CallPhone Limited",
+      title: "Frontend Engineer",
+      date: "September, 2022 - Present",
       description: [
         {
           id: 1,
-          text: "Created reusable components for the implementation of the Product Page, a borderless payment platform, and the Company website",
+          text: "Leading the Airgate Api Integration Team on integrating the Airgate merchant services to the Airgate merchant web app",
         },
         {
           id: 2,
-          text: "Handled  the Validation Logic for all Forms to ensure users input meet the program specified requirements before sending to the backend",
-        },
-        {
-          id: 3,
-          text: "Connected the Frontend to the Backend Endpoint",
+          text: "Building solutions to enable better productivity and experience from the internal admin team",
         },
       ],
     },
 
     {
       id: 2,
-      company: "Koogah Logistics",
-      title: "Frontend Engineer Intern",
-      date: "November, 2021 - December, 2021",
+      company: "Thrifit Africa",
+      title: "Frontend Engineer (Contract)",
+      date: "June, 2022 - Present",
       description: [
         {
           id: 1,
-          text: "Implemented the overall UI for the Admin Login, Signup, and  Forgot Password Form",
-        },
-        {
-          id: 2,
-          text: "Handled the different states in the form, eg: Error and Success State",
-        },
-        {
-          id: 3,
-          text: "Handled  the Validation Logic for all Forms to ensure users input meet the program specified requirements before sending to the backend",
-        },
-        {
-          id: 4,
-          text: "Made improvement and decreased technical depth by writing logics to fix bug in the company software",
+          text: "Contributing to the frontend of Thrifit, a marketplace that connect buyers and sellers of Thrift products. Currently working on the buyer's and seller's hub",
         },
       ],
     },
-
     {
       id: 3,
-      company: "Zuri Chat",
-      title: "Frontend Engineer",
-      date: "August, 2021 - November, 2021",
+      company: "GenioPay",
+      title: "Frontend Engineer (Contract)",
+      date: "Febuary, 2022 - March, 2022",
       description: [
         {
           id: 1,
-          text: "Wrote modern, performant, maintainable code for the company software, a Plugin Powered Micro-Frontend Slack Clone",
-        },
-        {
-          id: 2,
-          text: "Implemented the UI for the Noticeboard Plugin notices page",
-        },
-        {
-          id: 3,
-          text: "Handled the migration from Create React App to Single Spa Micro-Frontend Framework",
-        },
-        {
-          id: 4,
-          text: "Made improvement and decreased technical depth by writing logics to fix bug in the company software",
+          text: "I was contracted to work on building MVP's which included UIs and client side authentication system for the company's core product",
         },
       ],
     },
 
     {
       id: 4,
-      company: "Zuri Team",
-      title: "Frontend Engineer Intern",
-      date: "March, 2021 - August, 2021",
+      company: "Koogah Logistics",
+      title: "Frontend Engineer (Contract)",
+      date: "November, 2021 - January, 2022",
       description: [
         {
           id: 1,
-          text: "Implemented the UI for the ongoing project, a web based Vet Consultation App",
-        },
-        {
-          id: 2,
-          text: "Implemented the Validation Logic  for the Login and SignUp Form",
-        },
-        {
-          id: 3,
-          text: "Connected the Login and SignUp Form to the backend endpoints",
-        },
-        {
-          id: 4,
-          text: "Deployed on a web hosting platform",
+          text: "Contributed to the automation of manually performed tasks by building the Koogah Admin Dashboard which included UIs and API Integrations",
         },
       ],
     },
@@ -134,55 +93,32 @@ const Data = {
 
   porfolio: [
     {
+      projectName: "Thrifit",
+      category: "on job",
+      image: thrifit,
+      technologies: "JavaScript, Reactjs, Redux Toolkit",
+      liveLink: "https://dev-thrifit.netlify.app/",
+      description: "eCommerce Web App for Thrifit Africa",
+      github: "",
+    },
+    {
       projectName: "Country Rest Api",
       category: "personal",
       image: exploreCountry,
-      technologies: "Reactjs, Tailwind",
+      technologies: "JavaScript, Reactjs, Tailwind",
       liveLink: "https://explore-country.netlify.app/",
       description:
-        "Frontend Mentor - REST Countries API with color theme switcher",
+        "Frontend Mentor - REST Countries API",
       github: "https://github.com/clefayomide/country_rest_api",
     },
     {
       projectName: "Dynamic Todo App",
       category: "personal",
       image: todo,
-      technologies: "Reactjs, Tailwind",
+      technologies: "JavaScript, Reactjs, Tailwind",
       liveLink: "https://todo-dnd.netlify.app/",
-      description: "Frontend mentor - Todo app with dynamic functionality",
+      description: "Frontend mentor - Todo app",
       github: "https://github.com/clefayomide/understanding-useReducer-hook",
-    },
-    {
-      projectName: "e-Commerce Product Page",
-      category: "personal",
-      image: productPage,
-      technologies: "Reactjs, CSS",
-      liveLink: "https://product-interface.netlify.app/",
-      description: "Frontend mentor - eCommerce Product Page",
-      github: "https://github.com/clefayomide/product-page",
-    },
-    {
-      projectName: "Trove Loan App",
-      category: "personal",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1636795750/jp91goiqqwux0uoic4dv.png",
-      technologies: "Reactjs, Firebase",
-      liveLink: "https://trove-engineering-challenge.netlify.app/",
-      description:
-        "A DEMO web app for investors to borrow up to 60% of portfolio value",
-      github: "",
-    },
-
-    {
-      projectName: "Payment Checkout Landing Page",
-      category: "personal",
-      image:
-        "https://res.cloudinary.com/clefayomide/image/upload/v1636794967/zaseputaj2laqf5sexmw.png",
-      technologies: "Reactjs",
-      liveLink: "https://nck-tech.netlify.app/",
-      description:
-        "A payment checkout landing page for an eCommerce enterprise",
-      github: "https://github.com/clefayomide/nckTech",
     },
   ],
 

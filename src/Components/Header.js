@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../myAvatar.svg";
+import avatar from "../assets/myAvatar.svg";
 import MobileHamburgerMenu from "./MobileHamburgerMenu";
 import MobileNavRoutes from "./MobileNavRoutes";
 import Routes from "./Routes";

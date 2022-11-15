@@ -864,7 +864,7 @@ body {
   border: 2px solid var(--link-primary);
 }
 
-@media (max-width: 3000px){
+@media (min-width: 1500px){
   .header,
   .main {
     width: 1500px;
@@ -1153,3 +1153,5 @@ body {
     font-size: small;
   }
 }
+
+
