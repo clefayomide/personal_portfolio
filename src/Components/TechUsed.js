@@ -4,10 +4,17 @@ import Image from "./Image";
 import TechAndToolsHeading from "./TechAndToolsHeading";
 
 const TechUsed = () => {
-  const [logo] = React.useState(Data.logo);
+  const [languages] = React.useState(Data.languages);
   return (
     <>
-      <div className="tech-tool">
+      <h4 className="recent-techs-header">Technologies I’ve been working with recently</h4>
+      <ul>
+        {languages.map((language) => (
+          <li class="recent-techs">{language.name}</li>
+        ))}
+      </ul>
+
+      {/* <div className="tech-tool">
         <TechAndToolsHeading
           className="tech-used-text"
           innerText="Technologies i use"
@@ -27,7 +34,7 @@ const TechUsed = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

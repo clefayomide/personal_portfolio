@@ -81,7 +81,6 @@ const About = () => {
       <div className="tech-used-logo-container">
         <div className="tech-tools-container">
           <TechUsed />
-          <ToolUsed />
         </div>
       </div>
     </section>

@@ -450,7 +450,8 @@ body {
 
 .tech-tools-container {
   width: 100%;
-  display: flex;
+  margin-top: 50px;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -577,7 +578,7 @@ body {
   margin-top: 20px;
 }
 
-.duties-lists {
+.duties-lists, .recent-techs {
   position: relative;
   padding-left: 40px;
   margin-bottom: 10px;
@@ -589,7 +590,16 @@ body {
   z-index: -1;
 }
 
-.duties-lists::before {
+.recent-techs-header {
+  font-weight: bold;
+  color: var(--link-primary);
+}
+
+.recent-techs {
+  color: var(--link-primary);
+}
+
+.duties-lists::before, .recent-techs::before {
   content: "▹";
   position: absolute;
   left: 0px;
