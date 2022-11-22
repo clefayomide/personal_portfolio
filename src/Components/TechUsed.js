@@ -1,7 +1,5 @@
 import React from "react";
 import Data from "../Data";
-import Image from "./Image";
-import TechAndToolsHeading from "./TechAndToolsHeading";
 
 const TechUsed = () => {
   const [languages] = React.useState(Data.languages);

@@ -4,7 +4,6 @@ import Btn from "./Btn";
 import DownloadCvBtn from "./DownloadCvBtn";
 import PageRouteAndHeadingText from "./PageRouteAndHeadingText";
 import TechUsed from "./TechUsed";
-import ToolUsed from "./ToolUsed";
 
 const About = () => {
   return (
