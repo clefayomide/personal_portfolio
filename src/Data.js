@@ -98,7 +98,7 @@ const Data = {
       projectName: "Thrifit",
       category: "on job",
       image: thrifit,
-      technologies: "JavaScript, Reactjs, Redux Toolkit",
+      technologies: "JavaScript, Reactjs, Redux Toolkit, Tailwind",
       liveLink: "https://dev-thrifit.netlify.app/",
       description: "eCommerce Web App for Thrifit Africa",
       github: "",
