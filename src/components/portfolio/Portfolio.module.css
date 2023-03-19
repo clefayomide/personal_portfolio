@@ -1,0 +1,93 @@
+.card_container {
+  border: 0.8px solid rgb(207, 204, 204);
+  width: 85%;
+  background-color: rgb(252, 252, 252);
+  padding: 30px;
+  transition: 0.5s linear;
+  position: relative;
+}
+
+.title {
+  font-family: var(--comic_neue_bold);
+  font-weight: 700;
+}
+
+.stacks {
+  color: #1b1b1d;
+  font-family: var(--comic_neue_normal);
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.desc {
+  color: #4b4b4c;
+  font-family: var(--comic_neue_normal);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.live_container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .card_container {
+    max-width: 45%;
+    height: 200px;
+  }
+
+  .live_container {
+    bottom: 30px;
+    right: 35px;
+    top: auto;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .title {
+    font-size: 18px;
+  }
+  .card_container {
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .card_container:hover {
+    background-color: #1b1b1d;
+  }
+
+  .card_container:hover > .title {
+    color: white;
+  }
+
+  .card_container:hover > .stacks {
+    color: #bebebe;
+  }
+
+  .card_container:hover > .desc {
+    font-family: var(--comic_neue_bold);
+    color: #7a7a7c;
+  }
+
+  .card_container:hover > .live_container {
+    color: #7a7a7c;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .card_container {
+    max-width: 380px;
+    height: 220px;
+  }
+}

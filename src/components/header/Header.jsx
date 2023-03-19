@@ -26,7 +26,7 @@ export const Header = ({ current_route }) => {
               fontWeight: `${current_route === "/portfolio" && "600"}`,
             }}
           >
-            <Link href={"/"}>PORTFOLIO</Link>
+            <Link href={"/portfolio"}>PORTFOLIO</Link>
           </li>
           <li
             className={styles.list_item}
