@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Header } from "@/components/header/Header";
-import { useRouter } from "next/router";
 import { Summary } from "@/components/summary/Summary";
 import {
   Designation,
@@ -10,7 +9,6 @@ import {
 } from "@/components/summary/profile/Profile";
 
 export default function Home() {
-  const router = useRouter();
   return (
     <>
       <Head>
@@ -34,7 +32,7 @@ delight end-users"
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header current_route={router.pathname} />
+        <Header />
 
         <Summary
           content_one={<Designation />}

@@ -56,7 +56,7 @@ Asterisk.args = {
 
 export const Social = Template.bind({});
 Social.args = {
-  backgroundColor: "white",
+  backgroundColor: "blue",
   isRounded: true,
   hasIcon: true,
   hasBorder: true,

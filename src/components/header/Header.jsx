@@ -6,8 +6,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import PropTypes from "prop-types";
 
-export const Header = ({ current_route }) => {
+export const Header = () => {
   const router = useRouter();
+  const current_route = router.pathname;
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>

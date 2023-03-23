@@ -75,7 +75,7 @@ export const ShortIntro = () => {
         isRounded={true}
       />
       <p className={styles.intro_text}>
-        My name is Victor, I am a Frontend Engineer based in Nigeria. I'm
+        My name is Victor, I am a Frontend Engineer based in Nigeria. I am
         currently building amazing FinTech solutions and products that delights
         the end users{" "}
         <span className={styles.current_company}>@CallPhone Limited</span>
