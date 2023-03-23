@@ -35,9 +35,6 @@ export const Designation = () => {
           <Button text="JavaScript" backgroundColor="#EFD81D" fontSize="14px" />
           <Button text="TypeScript" backgroundColor="#3178C6" fontSize="14px" />
           <Button text="Next" backgroundColor="grey" fontSize="14px" />
-        </div>
-
-        <div className={styles.languages_container}>
           <Button text="Storybook" backgroundColor="#FF4785" fontSize="14px" />
           <Button text="Jest & RTL" backgroundColor="#000000" fontSize="14px" />
           <Button text="API" backgroundColor="#593D88" fontSize="14px" />

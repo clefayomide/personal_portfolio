@@ -39,3 +39,13 @@
     padding-right: 30px;
   }
 }
+
+@media all and (min-width: 1600px) {
+  .flex_container {
+    width: 1500px;
+    max-width: 1500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}

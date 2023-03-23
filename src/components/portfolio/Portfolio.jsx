@@ -3,13 +3,13 @@ import React from "react";
 import UIConverter from "../../assets/ui-currency-converter.png";
 import styles from "./Portfolio.module.css";
 
-export const Portfolio = ({ title, stacks, desc }) => {
+export const Portfolio = ({ title, stacks, desc, link }) => {
   return (
     <div className={styles.card_container}>
       <h1 className={styles.title}>{title}</h1>
       <p className={styles.stacks}>{stacks}</p>
       <p className={styles.desc}>{desc}</p>
-      <a href="#" className={styles.live_container}>
+      <a href={link} className={styles.live_container} target="_blank" rel="n">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

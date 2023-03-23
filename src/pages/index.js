@@ -35,6 +35,7 @@ delight end-users"
       </Head>
       <main>
         <Header current_route={router.pathname} />
+
         <Summary
           content_one={<Designation />}
           content_three={<ShortIntro />}

@@ -29,21 +29,27 @@ const index = () => {
             desc="Airvend web app for vas and utility services"
             stacks="JAVASCRIPT + REACT"
             title="Airvend"
+            link={"https://test-airvend-web.netlify.app/"}
           />
           <Portfolio
             desc="Customisable UI currency converter package library"
             stacks="TYPESCRIPT + REACT"
             title="UI Currency Converter"
+            link={
+              "https://www.npmjs.com/package/@clefayomide/ui-currency-converter"
+            }
           />
           <Portfolio
             desc="eCommerce web app for thrift sellers and buyers"
             stacks="JAVASCRIPT + REACT"
             title="Thrifit"
+            link={"https://dev-thrifit.netlify.app/"}
           />
           <Portfolio
             desc="Spotify clone"
             stacks="TYPESCRIPT + REACT"
             title="Not Spotifffyyy"
+            link={"https://not-spotifffyyy.netlify.app/"}
           />
         </section>
       </main>

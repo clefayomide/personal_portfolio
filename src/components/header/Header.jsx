@@ -16,7 +16,12 @@ export const Header = ({ current_route }) => {
         <ul className={styles.list}>
           <li
             className={styles.list_item}
-            style={{ fontWeight: `${current_route === "/" && "600"}` }}
+            style={{
+              fontWeight: `${current_route === "/" && "600"}`,
+              fontFamily: `${
+                current_route === "/" && "var(--comic_neue_bold)"
+              }`,
+            }}
           >
             <Link href={"/"}>HOME</Link>
           </li>
@@ -24,6 +29,9 @@ export const Header = ({ current_route }) => {
             className={styles.list_item}
             style={{
               fontWeight: `${current_route === "/portfolio" && "600"}`,
+              fontFamily: `${
+                current_route === "/portfolio" && "var(--comic_neue_bold)"
+              }`,
             }}
           >
             <Link href={"/portfolio"}>PORTFOLIO</Link>
@@ -32,13 +40,21 @@ export const Header = ({ current_route }) => {
             className={styles.list_item}
             style={{
               fontWeight: `${current_route === "/experience" && "600"}`,
+              fontFamily: `${
+                current_route === "/experience" && "var(--comic_neue_bold)"
+              }`,
             }}
           >
             <Link href={"/"}>EXPERIENCE</Link>
           </li>
           <li
             className={styles.list_item}
-            style={{ fontWeight: `${current_route === "/contact" && "600"}` }}
+            style={{
+              fontWeight: `${current_route === "/contact" && "600"}`,
+              fontFamily: `${
+                current_route === "/contact" && "var(--comic_neue_bold)"
+              }`,
+            }}
           >
             <Link href={"/"}>CONTACT</Link>
           </li>
