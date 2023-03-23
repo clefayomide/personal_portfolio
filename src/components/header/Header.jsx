@@ -94,7 +94,3 @@ export const Header = () => {
     </header>
   );
 };
-
-Header.propTypes = {
-  current_route: PropTypes.string.isRequired,
-};
