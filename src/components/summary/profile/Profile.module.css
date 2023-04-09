@@ -94,6 +94,10 @@
 }
 
 @media all and (min-width: 1024px) {
+  .designation_animate {
+    animation: 3s alternate slidein;
+  }
+
   .profile {
     width: 160px;
     height: 160px;
@@ -101,11 +105,51 @@
   .designation_title {
     text-align: left;
   }
+
+  @keyframes slidein {
+    0% {
+      transform: translateY(-20%);
+      opacity: 0;
+    }
+
+    50% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
 }
 
 @media all and (min-width: 1280px) {
   .profile {
     width: 300px;
     height: 300px;
+  }
+
+  .profile_container {
+    opacity: 0;
+    animation: 1s 5s alternate forwards opacity;
+  }
+
+  .intro_container {
+    transform: translateX(-100%);
+    animation: 2s 3s alternate forwards movePos;
+  }
+
+  @keyframes movePos {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes opacity {
+    100% {
+      opacity: 5;
+    }
   }
 }

@@ -37,27 +37,15 @@ export const Header = () => {
           >
             <Link href={"/portfolio"}>PORTFOLIO</Link>
           </li>
-          <li
-            className={styles.list_item}
-            style={{
-              fontWeight: `${current_route === "/experience" && "600"}`,
-              fontFamily: `${
-                current_route === "/experience" && "var(--comic_neue_bold)"
-              }`,
-            }}
-          >
-            <Link href={"/"}>EXPERIENCE</Link>
-          </li>
-          <li
-            className={styles.list_item}
-            style={{
-              fontWeight: `${current_route === "/contact" && "600"}`,
-              fontFamily: `${
-                current_route === "/contact" && "var(--comic_neue_bold)"
-              }`,
-            }}
-          >
-            <Link href={"/"}>CONTACT</Link>
+          <li className={styles.list_item}>
+            <a
+              target={"_blank"}
+              href={
+                "https://docs.google.com/document/d/1_moG8-dROFMRwZkCjKEw1-JilEKmEiDoLU7D76TX84Q/edit"
+              }
+            >
+              RESUME
+            </a>
           </li>
         </ul>
 

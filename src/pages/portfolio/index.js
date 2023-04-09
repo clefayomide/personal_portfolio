@@ -26,7 +26,7 @@ const index = () => {
             desc="Airvend web app for vas and utility services"
             stacks="JAVASCRIPT + REACT"
             title="Airvend"
-            link={"https://test-airvend-web.netlify.app/"}
+            link={"https://test.airvend.ng/"}
           />
           <Portfolio
             desc="Customisable UI currency converter package library"

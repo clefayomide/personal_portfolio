@@ -7,7 +7,9 @@ export const Summary = ({ content_one, content_two, content_three }) => {
   return (
     <Flex>
       <section className={styles.content}>{content_one}</section>
-      <section className={`${styles.content} ${styles.content_diff}`}>{content_two}</section>
+      <section className={`${styles.content} ${styles.content_diff}`}>
+        {content_two}
+      </section>
       <section className={styles.content}>{content_three}</section>
     </Flex>
   );

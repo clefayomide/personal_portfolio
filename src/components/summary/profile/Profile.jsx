@@ -5,7 +5,7 @@ import { Button } from "../../../components/button/Button";
 
 export const Designation = () => {
   return (
-    <div>
+    <div className={styles.designation_animate}>
       <div className={styles.designation_title}>Frontend Engineer</div>
 
       <div className={styles.languages_outer_container}>
