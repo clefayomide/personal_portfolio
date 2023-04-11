@@ -5,6 +5,7 @@ import { Button } from "../button/Button";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import PropTypes from "prop-types";
+import { MobileMenu } from "../mobile-menu/MobileMenu";
 
 export const Header = () => {
   const router = useRouter();
@@ -78,6 +79,7 @@ export const Header = () => {
             />
           </a>
         </div>
+        <MobileMenu />
       </nav>
     </header>
   );

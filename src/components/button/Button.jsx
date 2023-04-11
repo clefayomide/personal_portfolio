@@ -11,13 +11,15 @@ export const Button = ({
   hasBorder,
   isTransparent,
   fontSize,
+  width,
+  height,
 }) => {
   return (
     <button
       className={styles.button}
       style={{
-        width: `${isRounded ? "40px" : "auto"}`,
-        height: `${isRounded && "40px"}`,
+        width: `${isRounded ? width || "40px" : width || "auto"}`,
+        height: `${(isRounded && height) || "40px"}`,
         background: `${isTransparent ? "none" : backgroundColor}`,
         display: `${hasIcon && "flex"}`,
         alignItems: `${"center"}`,
@@ -35,7 +37,7 @@ export const Button = ({
 };
 
 Button.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string || PropTypes.node,
   backgroundColor: PropTypes.string,
   hasIcon: PropTypes.bool,
   icon: PropTypes.node,
