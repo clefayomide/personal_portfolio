@@ -30,13 +30,13 @@ export const Header = () => {
           <li
             className={styles.list_item}
             style={{
-              fontWeight: `${current_route === "/portfolio" && "600"}`,
+              fontWeight: `${current_route === "/projects" && "600"}`,
               fontFamily: `${
-                current_route === "/portfolio" && "var(--comic_neue_bold)"
+                current_route === "/projects" && "var(--comic_neue_bold)"
               }`,
             }}
           >
-            <Link href={"/portfolio"}>PORTFOLIO</Link>
+            <Link href={"/projects"}>PROJECTS</Link>
           </li>
           <li className={styles.list_item}>
             <a

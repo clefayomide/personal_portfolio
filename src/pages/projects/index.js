@@ -29,24 +29,22 @@ const index = () => {
             link={"https://test.airvend.ng/"}
           />
           <Portfolio
-            desc="Customisable UI currency converter package library"
+            desc="NPM Packages"
             stacks="TYPESCRIPT + REACT"
-            title="UI Currency Converter"
-            link={
-              "https://www.npmjs.com/package/@clefayomide/ui-currency-converter"
-            }
-          />
-          <Portfolio
-            desc="eCommerce web app for thrift sellers and buyers"
-            stacks="JAVASCRIPT + REACT"
-            title="Thrifit"
-            link={"https://dev-thrifit.netlify.app/"}
+            title="Frontend Tooling"
+            link={"https://www.npmjs.com/settings/clefayomide/packages"}
           />
           <Portfolio
             desc="Spotify clone"
             stacks="TYPESCRIPT + REACT"
             title="Not Spotifffyyy"
             link={"https://not-spotifffyyy.netlify.app/"}
+          />
+          <Portfolio
+            desc="eCommerce web app for thrift sellers and buyers"
+            stacks="JAVASCRIPT + REACT"
+            title="Thrifit"
+            link={"https://dev-thrifit.netlify.app/"}
           />
         </section>
       </main>
