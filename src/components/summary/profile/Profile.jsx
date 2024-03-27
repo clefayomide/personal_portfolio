@@ -38,6 +38,7 @@ export const Designation = () => {
           <Button text="Storybook" backgroundColor="#FF4785" fontSize="14px" />
           <Button text="Jest & RTL" backgroundColor="#000000" fontSize="14px" />
           <Button text="API" backgroundColor="#593D88" fontSize="14px" />
+          <Button text="SQL" backgroundColor="grey" fontSize="14px" />
         </div>
       </div>
     </div>

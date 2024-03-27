@@ -23,10 +23,16 @@ const index = () => {
         <Header />
         <section className={styles.portfolio_container}>
           <Portfolio
-            desc="Airvend web app for vas, money transfer, and utility services"
+            desc="vas, money transfer, and utility services"
             stacks="JAVASCRIPT + REACT"
             title="Airvend"
-            link={"https://airvend.ng/"}
+            link={"https://app.airvend.ng/"}
+          />
+           <Portfolio
+            desc="Payment Gateway"
+            stacks="JAVASCRIPT + REACT"
+            title="Airgate"
+            link={"https://airgate.ng/"}
           />
           <Portfolio
             desc="NPM Packages"
